@@ -9,6 +9,10 @@ function prepara(){
 	//pegando a chave.
 	var chave = $("#chave").val();
 	var chave = chave.split("");
+	if(chave.length<8){
+		alert("Sua senha deve ter 8 caracteres cravados!!!");
+	}
+	else{
 	//confirmando se funcionou.
 	//console.log(chave);
 
@@ -35,10 +39,16 @@ function prepara(){
 	texto = texto.join("");
 	texto = texto.split("");
 
-	
-	texto = transposicao(texto,chave);
+	console.log(texto);
+	texto = rot8(texto);
+    console.log(texto);
 
-	$("#cifrado").append($("<p/>").text(texto));
+    texto = substituicao(texto);
+
+    texto = texto.join("");
+
+	$("#cifrado").append($("<h4/>").text("criptografia:  ")).append($("<p />").text(texto));
 
 	//console.log(texto);
+	}
 }
