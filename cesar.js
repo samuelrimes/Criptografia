@@ -1,163 +1,81 @@
-function cesar(){
+function cesar(texto){
 
-			for(i=0;i<texto1.length;i++){
-				if(texto1[i]=='A'){
-					texto1[i]='c';
-				}
-				if(texto1[i]=='B'){
-					texto1[i]='e';
-				}
-				if(texto1[i]=='C'){
-					texto1[i]='f';
-				}
-				if(texto1[i]=='D'){
-					texto1[i]='g';
-				}
-				if(texto1[i]=='E'){
-					texto1[i]='h';
-				}
-				if(texto1[i]=='F'){
-					texto1[i]='i';
-				}
-				if(texto1[i]=='G'){
-					texto1[i]='j';
-				}
-				if(texto1[i]=='H'){
-					texto1[i]='k';
-				}
-				if(texto1[i]=='I'){
-					texto1[i]='l';
-				}
-				if(texto1[i]=='J'){
-					texto1[i]='m';
-				}
-				if(texto1[i]=='K'){
-					texto1[i]='n';
-				}
-				if(texto1[i]=='L'){
-					texto1[i]='o';
-				}
-				if(texto1[i]=='M'){
-					texto1[i]='p';
-				}
-				if(texto1[i]=='N'){
-					texto1[i]='q';
-				}
-				if(texto1[i]=='O'){
-					texto1[i]='r';
-				}
-				if(texto1[i]=='P'){
-					texto1[i]='s';
-				}
-				if(texto1[i]=='Q'){
-					texto1[i]='t';
-				}
-				if(texto1[i]=='R'){
-					texto1[i]='u';
-				}
-				if(texto1[i]=='S'){
-					texto1[i]='v';
-				}
-				if(texto1[i]=='T'){
-					texto1[i]='w';
-				}
-				if(texto1[i]=='U'){
-					texto1[i]='x';
-				}
-				if(texto1[i]=='V'){
-					texto1[i]='y';
-				}
-				if(texto1[i]=='W'){
-					texto1[i]='z';
-				}
-				if(texto1[i]=='X'){
-					texto1[i]='a';
-				}
-				if(texto1[i]=='Y'){
-					texto1[i]='b';
-				}
-				if(texto1[i]=='Z'){
-					texto1[i]='c';
-				}
-				if(texto1[i]=='a'){
-					texto1[i]='C';
-				}
-				if(texto1[i]=='b'){
-					texto1[i]='E';
-				}
-				if(texto1[i]=='c'){
-					texto1[i]='F';
-				}
-				if(texto1[i]=='d'){
-					texto1[i]='G';
-				}
-				if(texto1[i]=='e'){
-					texto1[i]='H';
-				}
-				if(texto1[i]=='f'){
-					texto1[i]='I';
-				}
-				if(texto1[i]=='g'){
-					texto1[i]='J';
-				}
-				if(texto1[i]=='h'){
-					texto1[i]='K';
-				}
-				if(texto1[i]=='i'){
-					texto1[i]='L';
-				}
-				if(texto1[i]=='j'){
-					texto1[i]='M';
-				}
-				if(texto1[i]=='k'){
-					texto1[i]='N';
-				}
-				if(texto1[i]=='l'){
-					texto1[i]='O';
-				}
-				if(texto1[i]=='m'){
-					texto1[i]='P';
-				}
-				if(texto1[i]=='n'){
-					texto1[i]='Q';
-				}
-				if(texto1[i]=='o'){
-					texto1[i]='R';
-				}
-				if(texto1[i]=='p'){
-					texto1[i]='S';
-				}
-				if(texto1[i]=='q'){
-					texto1[i]='T';
-				}
-				if(texto1[i]=='r'){
-					texto1[i]='U';
-				}
-				if(texto1[i]=='s'){
-					texto1[i]='V';
-				}
-				if(texto1[i]=='t'){
-					texto1[i]='W';
-				}
-				if(texto1[i]=='u'){
-					texto1[i]='X';
-				}
-				if(texto1[i]=='v'){
-					texto1[i]='Y';
-				}
-				if(texto1[i]=='w'){
-					texto1[i]='Z';
-				}
-				if(texto1[i]=='x'){
-					texto1[i]='A';
-				}
-				if(texto1[i]=='y'){
-					texto1[i]='B';
-				}
-				if(texto1[i]=='z'){
-					texto1[i]='C';
-				}
-			}
-			console.log(i);
-			console.log(texto1);
+	var c = new Array;
+
+	//cifra de césar.
+	for(i=0;i<texto.length;i++){
+		if (texto[i]=="0") {
+			c.push(i);
+		}
+		if (texto[i]=="d") {
+			texto[i]="0";
+		}
+		if (texto[i]=="a") {
+			texto[i]="D";
+		}
+		if (texto[i]=="A") {
+			texto[i]="D";
+		}
+		if (texto[i]=="7") {
+			texto[i]="A";
+		}
+		if (texto[i]=="4") {
+			texto[i]="7";
+		}
+		if (texto[i]=="1") {
+			texto[i]="4";
+		}
+		if (texto[i]=="e") {
+			texto[i]="1";
+		}
+		if (texto[i]=="E") {
+			texto[i]="1";
+		}
+		if (texto[i]=="b") {
+			texto[i]="E";
+		}
+		if (texto[i]=="B") {
+			texto[i]="E";
+		}
+		if (texto[i]=="8") {
+			texto[i]="B";
+		}
+		if (texto[i]=="5") {
+			texto[i]="8";
+		}
+		if (texto[i]=="2") {
+			texto[i]="5";
+		}
+		if (texto[i]=="f") {
+			texto[i]="2";
+		}
+		if (texto[i]=="F") {
+			texto[i]="2";
+		}
+		if (texto[i]=="c") {
+			texto[i]="F";
+		}
+		if (texto[i]=="C") {
+			texto[i]="F";
+		}
+		if (texto[i]=="9") {
+			texto[i]="C";
+		}
+		if (texto[i]=="6") {
+			texto[i]="9";
+		}
+		if(texto[i]=="3"){
+			texto[i]="6";
+		}
 	}
+	for(k=0;k<c.length;k++){
+		for(j=0;j<texto.length;j++){
+			if(c[k]==j){
+				texto[j]="3";
+			}
+		}
+	}
+	console.log(texto);
+
+	return texto;
+}
